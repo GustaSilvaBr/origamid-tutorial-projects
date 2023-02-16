@@ -1,0 +1,215 @@
+body{
+    display:grid;
+
+    justify-content:center; 
+    align-content:center;
+
+    grid-template-columns: 1fr;
+
+
+    gap:60px;   
+}
+
+header{
+    display:grid;
+    grid-template-rows:2;
+    gap:60px;
+
+    justify-content:center;
+    justify-items:center;
+
+    padding-top: 60px;
+}
+
+
+nav{
+    display:flex;
+    gap:20px;
+
+}
+
+nav a{
+    text-decoration:none;
+    font-size:16px;
+    
+    background-color:#fff;
+    padding: 15px 30px;
+
+    border-radius:4px;
+
+    color:#000;
+}
+
+.red-line{
+    position:absolute;
+    z-index:1;
+
+    top:20px;
+    left: calc(50% - 30px);
+    
+    background:var(--red);
+    border:none;
+
+    height:4px;
+    width:60px;
+}
+
+main{
+    position:relative;
+    /* width: 1200px; */
+    justify-self:center;
+    max-width: var(--principal-content);
+
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;    
+}
+
+main div{
+    padding: 0 30px;
+}
+
+
+img.bike-photo{
+    max-width:100%;
+}
+
+.see-more{
+    display:grid;
+    align-content:center;
+    
+    justify-items:end;
+
+    background-color: #fff;
+}
+
+.see-more h1{
+    margin:0;
+    
+}
+
+.see-more p{
+    /* margin: 0; */
+    text-align:end;
+    font-size:var(--paragraphs-font-size);
+}
+
+.see-more a{
+    background-color:var(--red);
+    text-decoration:none;
+    color:#fff;
+    padding: 15px 30px; 
+
+    font-size:16px;
+
+    text-transform:uppercase;
+
+    border-radius:5px;
+}
+
+.benefits{
+    display:flex;
+    align-items:center;
+
+    text-transform:uppercase;
+}
+
+.benefits h1 {
+    color:var(--dark-gray);
+    text-align:right;
+}
+
+div.list{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    align-items:center;
+
+    background-color:#fff;
+}
+
+div.list ul{
+    list-style:none;
+    display:grid;
+    row-gap:40px;
+
+}
+
+div.list ul li{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    row-gap:10px;
+}
+
+div.list ul li img{
+    margin-right:20px;
+}
+
+div.list ul li h3{
+    margin:0;
+}
+
+div.list ul li p{
+    grid-column:2;
+    font-size:var(--paragraphs-font-size);
+    margin:0;
+}
+
+footer{
+    display:flex;
+    background-color:#fff;
+    height:110px;
+
+    place-content: center;
+    place-items: center;
+
+    margin:0;
+}
+
+footer p{
+    margin:0;
+    font-size:24px;
+}
+
+/*General styles*/
+
+:root{
+    /*Colors*/
+    --gray:#f7f7f7;
+    --dark-gray:#c6c6c6;
+    --red:#ee2211;
+
+    /*Typography*/
+
+    --font-family: arial;
+    --paragraphs-font-size: 20px;
+    --title-font-size:64px;
+
+    /*Sizings*/
+
+    --principal-content: 1000px;
+}
+
+*{    
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--gray);
+
+    font-family:var(--font-family);
+
+    margin:0;
+    padding:0;
+}
+
+p{
+    font-size:var(--paragraphs-font-size);
+}
+
+div.benefits h1{
+    font-size:var(--title-font-size);
+}
+
+
